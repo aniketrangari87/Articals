@@ -1,0 +1,91 @@
+  From MonolithicArchitecture  to  The Microservice Architecture 
+
+
+ What is Monolithic Architecture ? 
+
+ The Monolithic architecture can be described as the architecture where all the layers or the Components 
+ of the Web App or  Any Application are  in the following : 
+
+   1 . Same Machine 
+   2. Same Programming Language 
+   3. Deployment
+
+ Why use Monolithic Architecture ? 
+ 
+ 1. When the Application just created or build :
+ : -  The big Companies like  Facebook , Paypal started their application as a Monolitic application 
+      if you wanted to buid a application that not having any database , unpredictable future plans it 
+      recomanted to start with the Monolithic Architecture .
+ 
+ 2. Latency Sensetive Application :  ( Latency :: response two way communication  ) 
+  : -  In the case of the Non-Monolithic Application  whenever the cliet wanted to send request for some data 
+       it will be required to more time to have a response  because of the data is distributed on the different 
+       servers .
+
+       But , In the case of Monolithic architecture the all the requested data are present in the same environment
+       so , it gives the response comaparatively faster than the Non-Monolithic Architecture with the help of the 
+       inter Process Communication . 
+
+       that's the resone for  Latency Sensetive Application it is recomanded to use Monolithic Architecture.
+ 
+ 3. Security Concense : 
+ : - For the making Super sucurity layers , it having a Better sucurity other than other Architecture.
+
+ 4. Less Comfused Developers : 
+ : - While working with Fresher or the people having low knowledge about the Microservices and the Latest tecchnologies 
+     it better to go with Monolithic architecture.
+
+Challenges of Monolithic Architecture : 
+
+1. Not Flexible , Sometime very slow in going to Deployment 
+: -  For making chages in any  layer or Componets we have to Re- Deploy  whole codebase . 
+
+2. Single Point of Failure : 
+: -  In the condition where machine crashed whole Application get wanished .
+
+3. Difficult to Scale : 
+: - In the scaling the Monolithic architecture we have to use multiple machines but , with increasing 
+    in no. machines the unwanted layers like ( BE, DB ) which are not required also increasing a cost 
+    for the another machine So  , it is difficult to scale with Monolithic architecture.
+ 
+ 4. Forced to use a single Stack .
+
+
+What is SOA ( Service Oriented Architecture )  ? 
+: -  The entire Architecture of SOA is classified into following : 
+
+      1 . Service Requester ( Request for service )
+      2 . Service Provider   ( Sending the response )
+  
+  Now in the Service Oriented Architecture the all layer or Components are seperately on the different
+  Machines and they are connected with each other with the help of networks .
+   
+   All the layer or componets are independently working with seperate codebases , tech  stack and other operations . 
+
+   Ex. Instagram  , Facebook 
+
+   Advantages of SOA : 
+
+   1 . Selectively Scalable
+   2 . Flexibility 
+   3 . Multiple Tech Stacks ( Multi Languages ) ex. MERN in web 
+   4 . No single point of failure 
+   5 . Reusability 
+
+   Challenges of SOA : 
+
+   1 . Security is Complex and Expensive 
+   2 . Notsutable in the latency Sensetive Application due to multiple servers / networks 
+   3 . Testing is Complicated 
+   4 . Due to copmlex technology it is more confuseed to developers at beginning 
+
+
+   Microservices Architecture : 
+
+   What is Microservice ? 
+   : -  Refined Version of the Servise oriented application ( SOA )
+        Modern version to SOA 
+
+example :       
+
+
